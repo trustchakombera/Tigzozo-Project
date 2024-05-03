@@ -171,6 +171,61 @@ table {
 		}
 	}
 }
+.media{
+    margin: 2rem 0;
+    .container{
+        .row{
+            .left{
+                .text-img{
+                    margin-top: 2rem;
+                    
+                }
+                .images{
+                    display: flex;
+                    position: relative;
+                    
+                    
+                    img{
+                        height: 60%;
+                        width: 40%;
+                    }
+                    
+                    .pic{
+                        // position: absolute;
+                        margin-top: 100px;
+                       
+                        img{
+                            height: 100%;
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+
+            .right{
+                margin: 4rem 0;
+                .image-one{
+                    img{
+                        height: 60vh;
+                        width: 100%;
+                .text-three{
+                 p{
+                    padding-top: 5rem;
+                 }
+                }
+                    }                   
+                }
+            }
+        }
+    }
+    button{
+        background: darkviolet;
+        border: none;
+        color: white;
+        width: 8rem;
+        height: 2rem;
+    }
+}
 
 
 
