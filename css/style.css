@@ -187,11 +187,11 @@ table {
 .media .container .row .right {
   margin: 4rem 0;
 }
-.media .container .row .right .image-one img {
+.media .container .row .right .image-ryt img {
   height: 60vh;
   width: 100%;
 }
-.media .container .row .right .image-one img .text-three p {
+.media .container .row .right .image-ryt img .text-three p {
   padding-top: 5rem;
 }
 .media button {
