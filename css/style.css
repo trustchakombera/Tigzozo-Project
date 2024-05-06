@@ -105,6 +105,9 @@ table {
   background: var(--primary-color);
   color: var(--secondary-color);
 }
+.banner .left .text h1 {
+  width: 80%;
+}
 .banner .left .buttons {
   display: flex;
   gap: 20px;
@@ -163,43 +166,138 @@ table {
   width: 25%;
 }
 
-.media {
+.tigzozo-media {
   margin: 2rem 0;
 }
-.media .container .row .left .text-img {
+.tigzozo-media .container .row .left h2 {
+  color: black;
+}
+.tigzozo-media .container .row .left .text-img {
   margin-top: 2rem;
 }
-.media .container .row .left .images {
+.tigzozo-media .container .row .left .images {
   display: flex;
   position: relative;
 }
-.media .container .row .left .images img {
+.tigzozo-media .container .row .left .images img {
   height: 60%;
   width: 40%;
 }
-.media .container .row .left .images .pic {
+.tigzozo-media .container .row .left .images .pic {
   margin-top: 100px;
 }
-.media .container .row .left .images .pic img {
+.tigzozo-media .container .row .left .images .pic img {
   height: 100%;
   width: 80%;
 }
-.media .container .row .right {
+.tigzozo-media .container .row .right-side {
   margin: 4rem 0;
 }
-.media .container .row .right .image-ryt img {
+.tigzozo-media .container .row .right-side .image-ryt img {
   height: 60vh;
   width: 100%;
 }
-.media .container .row .right .image-ryt img .text-three p {
+.tigzozo-media .container .row .right-side .image-ryt img .text-ryt p {
   padding-top: 5rem;
 }
-.media button {
+.tigzozo-media .left-btn1 button {
   background: darkviolet;
   border: none;
   color: white;
+  font-weight: 700;
   width: 8rem;
   height: 2rem;
+}
+
+.services .container .gallery {
+  gap: 2px;
+  display: flex;
+  justify-content: space-around;
+}
+.services .container .gallery .pics {
+  width: 40vh;
+  position: relative;
+}
+.services .container .gallery .pics img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.services .container .gallery .pics .text-h3 {
+  position: absolute;
+  top: 5px;
+  background-color: transparent;
+  align-items: center;
+}
+.services .container .gallery .pics .text-h3 h3 {
+  align-items: bottom;
+  background: transparent;
+  text-align: center;
+  color: white;
+}
+
+.about-tig-media {
+  padding-top: 10vh;
+}
+.about-tig-media .container .row {
+  display: flex;
+}
+.about-tig-media .container .row .left {
+  padding-top: 10vh;
+}
+.about-tig-media .container .row .left .left-img1 img {
+  width: 40vw;
+  height: 60vh;
+}
+.about-tig-media .container .row .right .ryt-img2 {
+  padding-top: 20px;
+}
+.about-tig-media .container .row .right .ryt-img2 img {
+  width: 40vw;
+  height: 60vh;
+}
+
+.gallery p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.gallery .pics {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.gallery .pics .down {
+  padding-top: 30vh;
+}
+.gallery .txt-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .txt-btn button {
+  background: #80228c;
+  border: none;
+  color: white;
+  width: 7vw;
+  height: 5vh;
+}
+
+.footer {
+  margin-top: 4em;
+}
+.footer .footer-container * {
+  background-color: #80228c !important;
+  color: white;
+}
+.footer .footer-container .row {
+  background: #80228c;
 }
 
 /*
