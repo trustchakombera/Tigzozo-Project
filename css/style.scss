@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -12,366 +11,303 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*phone styles*/
-:root{
-	--primary-color: white;
-	--secondary-color: black;
+:root {
+  --primary-color: white;
+  --secondary-color: black;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	background: var(--primary-color);
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.mobile-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.8em;
-
-    .hamburger{
-        border: 2px solid #80228c;
-        height: 50px;
-        width: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-
-        .line{
-            background: rgb(128, 34, 140);
-            height: 3px;
-            width: 80%;
-        }
-    }
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8em;
+}
+.mobile-nav .hamburger {
+  border: 2px solid #80228c;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.mobile-nav .hamburger .line {
+  background: rgb(128, 34, 140);
+  height: 3px;
+  width: 80%;
 }
 
-.pc-nav{
-	display: none;
+.pc-nav {
+  display: none;
 }
 
-.banner{
-	padding: 15px 0;
-	background: var(--primary-color);
-	
-	.left{
-		background: var(--primary-color);
-		background: transparent;
-		padding: 10px;
-		gap: 100px;
-
-		.text{
-			background: var(--primary-color);
-			color: var(--secondary-color);
-	h1{
-	
-		width: 80%;
-	}
-		}
-
-		.buttons{
-			display: flex;
-			gap: 20px;
-			margin: 2vh 0;
-
-			.bttn-discover{
-				background: rgb(128, 34, 140);
-				padding: 5px 20px;
-				cursor: pointer;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 10rem;
-
-				a{
-					background: none;
-					color: var(--primary-color);
-					text-decoration: none;
-					font-size: 15px;
-				}
-			}
-			.bttn-book{
-				background: transparent;
-				border: 3px solid rgb(128, 34, 140);
-				padding: 5px 20px;
-				cursor: pointer;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 10rem;
-
-				a{
-					background: none;
-					color: var(--secondary-color);
-					text-decoration: none;
-					font-size: 15px;
-				}
-			}
-		}
-		
-		.link{
-			margin: 2vh 0;
-
-			.text{
-				background: transparent;
-				gap: 10px;
-
-				img{
-					width: 25px;
-					height: auto;
-					background: none;
-				}
-
-				p{
-					background: none;
-				}
-			}
-		}
-	}
-
-	.right{
-		display: flex;
-
-		img{
-			width: 25%;
-		}
-	}
+.banner {
+  padding: 15px 0;
+  background: var(--primary-color);
 }
-.tigzozo-media{
-    margin: 2rem 0;
-    .container{
-        .row{
-            .left{
-			h2{
-			  color: black;
-			}
-                .text-img{
-                    margin-top: 2rem;
-                    
-                }
-                .images{
-                    display: flex;
-                    position: relative;
-                    
-                    
-                    img{
-                        height: 60%;
-                        width: 40%;
-                    }
-                    
-                    .pic{
-                       
-                        margin-top: 100px;
-                       
-                        img{
-                            height: 100%;
-                            width: 80%;
-                        }
-                    }
-                }
-            }
-
-            .right-side{
-                margin: 4rem 0;
-                .image-ryt{
-                    img{
-                        height: 60vh;
-                        width: 100%;
-                .text-ryt{
-                 p{
-                    padding-top: 5rem;
-                 }
-                }
-                    }                   
-                }
-            }
-        }
-    }
-  .left-btn1{
-	button{
-        background: darkviolet;
-        border: none;
-        color: white;
-		font-weight: 700;
-        width: 8rem;
-        height: 2rem;
-    }
+.banner .left {
+  background: var(--primary-color);
+  background: transparent;
+  padding: 10px;
+  gap: 100px;
 }
-  }
-
-
-.services{
-    .container{
-        .gallery{
-            gap: 2px;
-            display: flex;
-			justify-content: space-around;
-            .pics{
-                width: 40vh;
-                position: relative;
-                img{
-                    width: 100%;
-                    height: 70vh;
-                    object-fit: cover;
-                    object-position: top;
-                    
-                    
-                }
-                
-                .text-h3{
-                   position: absolute;
-                   top: 5px;
-                   background-color:transparent;
-                   align-items: center;
-                   h3{
-                    align-items: bottom;
-					background: transparent;
-                    text-align: center;
-                    color: white;
-                   }
-                    
-                }
-        }
-        // .card-one{
-		// 	.texting{
-		// 		background-color: #80228c;
-		// 		height: 70vh;
-		// 		color: black;
-		// 		color: transparent;
-				
-      
-        // }
-        // }
-    }
-}}
-
-.about-tig-media{ padding-top: 10vh;
-	             
-.container{	
-
-.row{ display: flex;
-	 
-.left{ padding-top: 10vh;
-	.left-img1{
-		  img{ width: 40vw;
-			height: 60vh;
-			
-		  }
-	}
-
-}	.right{ 
-	
-.ryt-img2{padding-top: 20px;
-		img{ 
-			width: 40vw;
-			height: 60vh;
-			
-
-		}
-	}
+.banner .left .text {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+.banner .left .text h1 {
+  width: 80%;
+}
+.banner .left .buttons {
+  display: flex;
+  gap: 20px;
+  margin: 2vh 0;
+}
+.banner .left .buttons .bttn-discover {
+  background: rgb(128, 34, 140);
+  padding: 5px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+}
+.banner .left .buttons .bttn-discover a {
+  background: none;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 15px;
+}
+.banner .left .buttons .bttn-book {
+  background: transparent;
+  border: 3px solid rgb(128, 34, 140);
+  padding: 5px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+}
+.banner .left .buttons .bttn-book a {
+  background: none;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 15px;
+}
+.banner .left .link {
+  margin: 2vh 0;
+}
+.banner .left .link .text {
+  background: transparent;
+  gap: 10px;
+}
+.banner .left .link .text img {
+  width: 25px;
+  height: auto;
+  background: none;
+}
+.banner .left .link .text p {
+  background: none;
+}
+.banner .right {
+  display: flex;
+}
+.banner .right img {
+  width: 25%;
 }
 
-	}
-		
-	}
-
-
-}	
-	.gallery{
-
-		p{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-weight: 700;
-		}
-		.pics{width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-		.down{
-			padding-top: 30vh;
-		}
-			
-		}
-		.txt-btn{
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-
-	button{
-				background: #80228c;
-				border: none;
-				color: white;
-				width: 7vw;
-				height: 5vh;
-	  
-			 }
-	}
+.tigzozo-media {
+  margin: 2rem 0;
 }
+.tigzozo-media .container .row .left h2 {
+  color: black;
+}
+.tigzozo-media .container .row .left .text-img {
+  margin-top: 2rem;
+}
+.tigzozo-media .container .row .left .images {
+  display: flex;
+  position: relative;
+}
+.tigzozo-media .container .row .left .images img {
+  height: 60%;
+  width: 40%;
+}
+.tigzozo-media .container  .row .left .images .pic {
+  margin-top: 100px;
+}
+.tigzozo-media .container .row .left .images .pic img {
+  height: 60vh;
+  width: 80%;
+}
+.tigzozo-media .container .row .right-side {
+  margin: 4rem 0;
+}
+.tigzozo-media .container .row .right-side .image-ryt img {
+  height: 60vh;
+  width: 80%;
+}
+.tigzozo-media 
+.container
+ .row 
+ .right-side 
+ .image-ryt img 
+ .text-ryt p {
+  padding-top: 5rem;
+}
+.tigzozo-media .left-btn1 button {
+  background: darkviolet;
+  border: none;
+  color: white;
+  font-weight: 700;
+  width: 8rem;
+  height: 2rem;
+}
+ 
+.services{ padding-bottom: 10vh;
+         width: 100%;
 
-.footer{
-	margin-top: 4em;
-
-.footer-container{
-	// margin-top: 10vh;
-
-	*{
-		background-color: #80228c !important ;
-		color: white;
-	}
-
+  .container{
+    
+    .three-cards{
+      display: flex;
+      width: 100%;
+      color: white;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      gap: 5px;
    
-.row{  
-   background: #80228c;
-	
+  
+      .card2 *{
+        background-color: #80228c;
+     
+       .digital-card{
+        height: 70vh;
+        width: 30vw;
+      
+       }
+      }
+      img{
+        height: 55vh;
+        width: 60%;
+       
+      }
+      
+    }
+   .two{
+    img{
+      height: 55vh;
+      width: 60%;
+    }
+    }
+   }}
+    
+  
+  
 
 
 
+ .gallery
+  p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: 700;
+ }
+ .pics {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
+ .down {
+  padding-top: 30vh;
 }
+ .txt-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ .txt-btn {
+ button {
+  background: #80228c;
+  border: none;
+  color: white;
+  width: 7vw;
+  height: 5vh;
+}}  
 
-		  
-
+.footer {
+  width: 100%;
+  margin-top: 4em;
+}
+.footer .footer-container * {
+  background-color: #80228c !important;
+  color: white;
+}
+.footer .footer-container .row {
+  background: #80228c;
+}
+.footer .footer-container .row h4 {
+  text-decoration: underline;
+}
+.footer .footer-container .row .icons {
+  display: flex;
+  gap: 1em;
 }
 
 
@@ -380,156 +316,102 @@ table {
 M E D I A  Q U E R I E S
 ####################################################
 */
-
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 4 breakpoints
 */
-
 /* 
 Extra small devices (portrait phones, less than 576px) 
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
-
-
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 568px) {  
-
-}
-
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-	.mobile-nav{
-		display: none;
-	}
+  .mobile-nav {
+    display: none;
+}}
 
-	.pc-nav{
-        display: block;
-
-        .flex-container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            ul{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 20px;
-                font-weight: 600;
-				margin-right: -30rem;
-
-                li{
-                    color: var(--secondary-color);
-                    font-size: 20px;
-
-					span{
-						color: rgb(128, 34, 140);
-					}
-                }
-
-				.dark-icon{
-					height: 30px;
-					width: 30px;
-					background: var(--secondary-color);
-					border-radius: 50%;
-				}
-            }
-
-			img{
-				width: 50px;
-				height: 50px;
-			}
-        }
-    }  
-
-	.banner{
-		.left{
-			.link{
-				.text{
-					display: flex;
-					align-items: center;
-				}
-			}
-		}
-
-		.right{
-			display: flex;
-			gap: 5px;
-
-			img{
-				height: 30vh;
-			}
-
-			.image1{
-				margin-top: 7vh;
-			}
-		}
-	}
-}
-
-
+  .pc-nav {
+    display: block;
+  }
+  .pc-nav .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pc-nav .flex-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+    margin-right: -30rem;
+  }
+  .pc-nav .flex-container ul li {
+    color: var(--secondary-color);
+    font-size: 20px;
+  }
+  .pc-nav .flex-container ul li span {
+    color: rgb(128, 34, 140);
+  }
+  .pc-nav .flex-container ul .dark-icon {
+    height: 30px;
+    width: 30px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+  }
+  .pc-nav .flex-container img {
+    width: 50px;
+    height: 50px;
+  }
+  .banner .left .link .text {
+    display: flex;
+    align-items: center;
+  }
+  .banner .right {
+    display: flex;
+    gap: 5px;
+  }
+  .banner .right img {
+    height: 30vh;
+  }
+  .banner .right .image1 {
+    margin-top: 7vh;
+  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-	.pc-nav{
-        .flex-container{
-            ul{
-                gap: 65px;
-            }
-        }
-    }
-
-	.banner{
-		.left{
-			height: 70vh;
-			align-content: center;
-			
-			.link{
-				.text{
-					display: flex;
-					align-items: center;
-				}
-			}
-		}
-
-		.right{
-			height: 70vh;
-			display: flex;
-			gap: 5px;
-
-			img{
-				height: 50vh;
-			}
-
-			.image1{
-				margin-top: 20vh;
-			}
-		}
-	}
+@media (min-width: 992px) {
+  .pc-nav .flex-container ul {
+    gap: 65px;
+  }
+  .banner .left {
+    height: 70vh;
+    align-content: center;
+  }
+  .banner .left .link .text {
+    display: flex;
+    align-items: center;
+  }
+  .banner .right {
+    height: 70vh;
+    display: flex;
+    gap: 5px;
+  }
+  .banner .right img {
+    height: 50vh;
+  }
+  .banner .right .image1 {
+    margin-top: 20vh;
+  }
 }
-
-
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    .pc-nav{
-        .flex-container{
-            ul{
-                gap: 90px;
-            }
-        }
-    }
-
+@media (min-width: 1200px) {
+  .pc-nav .flex-container ul {
+    gap: 90px;
+  }
 }
-
-
-
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Custom media queries
 */
-
-/* Set width to make card deck cards 100% width */
-@media (max-width: 950px) { 
-
-}
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
