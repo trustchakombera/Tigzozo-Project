@@ -35,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -68,6 +69,7 @@ table {
 }
 
 .mobile-navbar {
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,15 +96,28 @@ table {
 }
 
 .banner {
-  font-family: "JosefinSans";
+  font-family: "Times New Roman", Times, serif;
 }
 .banner .container .row .left {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
 }
+.banner .container .row .left h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
 .banner .container .row .left .latest {
+  padding-top: 10px;
   color: #80228c;
+}
+.banner .container .row .left .latest img {
+  width: 30px;
+  height: 30px;
+}
+.banner .container .row .left .tick {
+  width: 30px;
+  height: 30px;
 }
 .banner .container .row .left .two-btns {
   display: flex;
@@ -132,15 +147,16 @@ table {
 }
 
 .about {
-  font-family: "JosefinSans";
+  font-family: "Times New Roman", Times, serif;
   padding-top: 5rem;
 }
 .about .container .row .left .text-left {
-  width: 20rem;
+  width: 25rem;
 }
 .about .container .row .left .imgs img {
   height: 30rem;
   width: 30rem;
+  padding: 10px;
 }
 .about .container .row .right .text {
   margin-top: 1rem;
@@ -158,7 +174,7 @@ table {
   border: none;
 }
 
-.pics .odhiri {
+.pics .trust {
   height: 60vh !important;
 }
 
@@ -167,26 +183,89 @@ table {
 }
 
 .services {
-  font-family: "JosefinSans";
-  gap: 20px;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.services .flexcontainer .row .cards .frst {
-  height: 60vh;
+.services h1 {
   width: 100%;
-  padding-right: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
-.services .flexcontainer .row .cards .sec {
+.services .events {
+  margin-top: 1rem;
+  background-image: url(../imgs/Rectangle\ 27.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  width: 358px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 4%;
+  margin-top: 1rem;
+  background-image: url(../imgs/Rectangle\ 27.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 60vh;
-  width: 100%;
-  padding-right: 20px;
+  width: 358px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 4%;
 }
-.services .flexcontainer .row .cards .thrd {
+.services .events p {
+  color: white;
+  position: absolute;
+  right: 45%;
+  bottom: 0;
+}
+.services img {
+  width: 4rem;
+  height: 4rem;
+  background-color: #80228c;
+  bottom: 1px;
+  right: 1px;
+  position: absolute;
+}
+.services .digitalservices {
+  margin-top: 1rem;
+  background-image: url(../imgs/Screen\ Shot\ 2022-11-24\ at\ 11.35.23.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 60vh;
-  width: 100%;
+  width: 358px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 4%;
+}
+.services .digitalservices img {
+  color: #fff;
+  background: #fff;
+}
+.services .girl {
+  margin-top: 1rem;
+  background-image: url(../imgs/Rectangle\ 47.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 358px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .clients {
-  font-family: "JosefinSans";
+  font-family: "Times New Roman", Times, serif;
   padding-top: 5rem;
 }
 .clients .container .row .left {
@@ -237,7 +316,7 @@ table {
 }
 
 .gallery {
-  font-family: "JosefinSans";
+  font-family: "Times New Roman", Times, serif;
 }
 .gallery .container .row {
   gap: 5px;
@@ -325,7 +404,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .gallery {
-    font-family: "JosefinSans";
+    font-family: "Times New Roman", Times, serif;
   }
   .gallery .container .row {
     gap: 0;
@@ -357,7 +436,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     border: none;
   }
   .services {
-    font-family: "JosefinSans";
+    font-family: "Times New Roman", Times, serif;
     gap: 20px;
   }
   .services .flexcontainer .row .cards .frst {
@@ -378,7 +457,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: none;
   }
   .pc-navbar {
-    font-family: "JosefinSans";
+    font-family: "Times New Roman", Times, serif;
     display: block;
   }
   .pc-navbar .flex-container {

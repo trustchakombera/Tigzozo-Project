@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -53,11 +54,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-// phone styles
-// :root{
-//     --primary-color: white;
-//     --secondary-color: black;
-// }
+
 
 .black{
     
@@ -69,11 +66,13 @@ table {
     margin: 0;
     padding: 0;
     background: var(--primary-color);
+    
    
   
 }
 
 .mobile-navbar{
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,15 +104,30 @@ table {
     display: none;
 }
 .banner{
-    font-family: "JosefinSans";
+    font-family: 'Times New Roman', Times, serif;
     .container{
         .row{
             .left{
             display: flex;
             flex-direction: column;
             margin-top: 3rem;
+
+            h2{
+                font-size: 40px;
+                font-weight: 300;
+            }
             .latest{
+                padding-top: 10px;
                 color: #80228c;
+              
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            }
+            .tick{
+                width: 30px;
+                height: 30px;
             }
             .two-btns{
               display: flex;
@@ -151,20 +165,22 @@ table {
     }
 }
 .about{
-    font-family: "JosefinSans";
+    font-family: 'Times New Roman', Times, serif;
+    
     padding-top: 5rem;
     .container{
         .row{
             
             .left{
              .text-left{
-                width: 20rem;
+                width: 25rem;
              }
             .imgs{
                
                 img{
                 height: 30rem;
                 width: 30rem;
+                padding: 10px;
             }
                
             }
@@ -176,7 +192,7 @@ table {
                     
                 }
                 img{
-                    
+                    // padding-top: 5%;
                     height: 1rem;
                     width: 20rem;
                 }
@@ -192,7 +208,7 @@ table {
     }
 }
 .pics{
-    .odhiri{
+    .trust{
         height: 60vh !important;
        
     }
@@ -200,39 +216,109 @@ table {
 .three{
     width: 26rem;
 }
-.services{
-    font-family: "JosefinSans";
-    
-     gap: 20px;
-    
-    .flexcontainer{
-        .row{
 
-           
-           
-            .cards{
-            
-             .frst{
-                height: 60vh;
-                width: 100%;
-                padding-right: 20px;
-             }  
-             .sec{
-                height: 60vh;
-                width: 100%;
-                padding-right: 20px;
-                
-            }
-            .thrd{
-                height: 60vh;
-                width: 100%;
-            }
-        }
+
+.services{
+    font-family: 'Times New Roman', Times, serif;
+   margin-top: 3%;
+   display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ h1{
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+ }
+.events{
+   margin-top: 1rem;
+   background-image: url(../imgs/Rectangle\ 27.png);
+
+   background-size: cover ;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 60px;
+   width: 358px;
+   display: flex;
+   justify-content: flex-end;
+   position: relative;
+   margin-right: 4%;
+  margin-top: 
+    1rem;
+    background-image: url(../imgs/Rectangle\ 27.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 358px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 4%;
+
+   p{
+    color: white;
+    position: absolute;
+    right: 45%;
+    bottom: 0;
+   }
+
+}
+img{
+    width: 4rem;
+    height: 4rem;
+    background-color: #80228c;
+    bottom: 1px;
+    right: 1px;
+    position: absolute;
+
+}
+.digitalservices{
+    margin-top: 
+    1rem;
+    background-image: url(../imgs/Screen\ Shot\ 2022-11-24\ at\ 11.35.23.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 358px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 4%;
+    img{
+        color: #fff;
+        background: #fff;
+
     }
+    
+
+}
+.girl{
+margin-top: 1rem;
+background-image: url(../imgs/Rectangle\ 47.png);
+background-size:cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 60vh;
+width: 358px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+position: relative;
+
+        
 }
 }
+
+
+
+
+
+
+
 .clients{
-    font-family: "JosefinSans";
+    font-family: 'Times New Roman', Times, serif;
     padding-top: 5rem;
     .container{
         .row{
@@ -293,7 +379,7 @@ table {
    
 }
 .gallery{
-    font-family: "JosefinSans";
+    font-family: 'Times New Roman', Times, serif;
     .container{
         .row{
             gap: 5px;
@@ -408,7 +494,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) { 
     .gallery{
-        font-family: "JosefinSans";
+        font-family: 'Times New Roman', Times, serif;
         .container{
             .row{gap: 0;
                 img{
@@ -444,7 +530,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
     } 
     .services{
-        font-family: "JosefinSans";
+        font-family: 'Times New Roman', Times, serif;
         
          gap: 20px;
         
@@ -477,7 +563,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         display: none;
     }
 .pc-navbar{
-    font-family: "JosefinSans";
+       font-family: 'Times New Roman', Times, serif;
     display: block;
     .flex-container{
         display: flex;
